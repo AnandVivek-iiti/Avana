@@ -1,4 +1,3 @@
-
 import Avana from "../assets/Avana.png";
 import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-router-dom";
@@ -16,7 +15,7 @@ export default function Navbar() {
       window.matchMedia("(prefers-color-scheme: dark)").matches
     );
   };
-const items = ["About", "Events", "Gallery", "Team", "Contact"];
+  const items = ["About", "Events", "Gallery", "Team", "Contact"];
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(getInitialTheme());
@@ -73,8 +72,12 @@ const items = ["About", "Events", "Gallery", "Team", "Contact"];
           </button>
 
           {/* CTA */}
+        
           <button className="hidden md:block bg-yellow-400 text-black px-5 py-2 rounded-xl font-semibold hover:bg-white hover:text-green-800 transition duration-300">
-            Get Started →
+
+            <a href="https://drive.google.com/file/d/1LBg4s-kI_vxR-h-yCmoDjpSVXkP-COrJ/view?fbclid=PAZXh0bgNhZW0CMTEAAafPD0kyAXXODttsS6AwONhcCT5nivwpeR0adk4F9ch6BAg9KXTOruKPs7rNuw_aem_Le_6H_Cvo3DviKR1xBHcRA">
+              View Yearbook →
+            </a>
           </button>
 
           {/* Mobile Menu */}
