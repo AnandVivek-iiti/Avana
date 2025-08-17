@@ -1,9 +1,16 @@
 import image1 from "../../Images/events-images/Margdarshan1.png";
+import image2 from "../../Images/events-images/Margdarshan2.png";
+import image3 from "../../Images/events-images/Margdarshan3.png";
+import image4 from "../../Images/events-images/Margdarshan4.png";
+import image5 from "../../Images/events-images/Margdarshan5.png";
+import image6 from "../../Images/events-images/Margdarshan6.png";
 
 export default function Margdarshan() {
+  const images = [image1, image2, image3, image4, image5, image6];
+
   return (
     <div className="max-w-5xl mx-auto px-4 py-12">
-      <h1 className="text-5xl md:text-6xl font-extrabold text-center mt-8 mb-8">
+      <h1 className="text-5xl md:text-6xl font-extrabold text-gradient from-yellow-300 to-orange-400 text-center mt-8 mb-8">
         Margdarshan
       </h1>
 
@@ -35,18 +42,26 @@ export default function Margdarshan() {
         build with them are what drive this initiative forward.
       </p>
 
-      <p className="text-center text-2xl md:text-3xl text-orange-500 font-semibold mt-8">
+      <p className="text-center text-2xl md:text-3xl text-black font-semibold mt-8">
         Education is more than knowledge—it’s opportunity, encouragement, and
         the power to dream big. Margdarshan embodies AVANA’s commitment to
         transforming lives through learning.
       </p>
 
-      <div className="mt-10 flex justify-center">
-        <img
-          src={image1}
-          alt="Margdarshan"
-          className="rounded-xl shadow-lg max-w-full h-auto"
-        />
+      {/* Image Grid */}
+      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        {images.map((img, index) => (
+          <div
+            key={index}
+            className="overflow-hidden rounded-xl shadow-lg transform transition duration-300 hover:scale-105"
+          >
+            <img
+              src={img}
+              alt={`Margdarshan ${index + 1}`}
+              className="w-full h-auto object-cover"
+            />
+          </div>
+        ))}
       </div>
     </div>
   );
