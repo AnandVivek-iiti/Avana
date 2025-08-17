@@ -86,7 +86,7 @@ export default function App() {
             <a href="/#/about">Get Started →</a>
           </button>
           <br />
-          </div>
+        </div>
 
         {/* Right - Event Cards */}
         <motion.div
