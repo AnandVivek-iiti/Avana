@@ -111,14 +111,6 @@ export default function App() {
         </motion.div>
       </section>
 
-      {/* Footer */}
-      <footer className="text-center py-6 bg-black/10 dark:bg-white/5 text-gray-800 dark:text-gray-300 mt-8">
-        <p className="text-sm md:text-base">
-          © 2025{" "}
-          <span className="text-yellow-300 font-semibold">AVANA Club</span> |
-          Striving for Change | IIT Indore
-        </p>
-      </footer>
       {/* </div> */}
     </div>
   );
