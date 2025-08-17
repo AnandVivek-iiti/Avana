@@ -145,7 +145,7 @@ export default function Navbar() {
     { name: "Cloth Donation" },
     { name: "Margdarshan" },
     { name: "Blood Donation" },
-    { name: "Old Age Home" },
+    { name: "Old Age Visit" },
     { name: "Diwali Celebration" },
   ];
 
