@@ -11,6 +11,7 @@ import ClothDonation
  from './components/Events/Cloth_donation';
 import BloodDonation from './components/Events/Blood_Donation';
 import Diwali from './components/Events/Diwali';
+import GallerySection from './components/Gallery';
 // import { Linkedin, Instagram } from 'lucide-react';
 import NotFound from './components/Notfound'
 import './App.css'
@@ -35,6 +36,7 @@ function App() {
       <Route path="/events/cloth-donation" element={<ClothDonation />} />
       <Route path="/events/blood-donation" element={<BloodDonation />} />
       <Route path="/events/diwali-celebration" element={<Diwali />} />
+      <Route path="/gallery" element={<GallerySection />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
 
