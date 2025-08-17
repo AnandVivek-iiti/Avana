@@ -274,8 +274,8 @@ export const ContactSection = () => {
         </div>
 
     {/* Team Cards */}
-    <div  className="w-250">
-<div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 w-auto">
+
+<div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 w-full">
   {contacts.map((person, idx) => (
     <motion.div
       key={idx}
@@ -283,12 +283,13 @@ export const ContactSection = () => {
       transition={{ type: "spring", stiffness: 300 }}
       className="bg-[#1e1e2e] rounded-2xl p-3 sm:p-4 md:p-6 flex flex-col items-center gap-2 md:gap-4 shadow-xl hover:shadow-2xl  border border-white/10 animate-glow-hover"
     >
+
       <h2 className="text-base sm:text-lg md:text-2xl font-bold text-cyan-400 text-center">
         {person.emoji} {person.title}
       </h2>
       <p className="text-white font-semibold text-center text-lg sm:text-sm md:text-base">{person.name}</p>
 
-      <div className="flex  gap-2 md:gap-4 mt-2">
+      <div className="flex flex-wrap gap-2 md:gap-4 mt-2">
         <a
           href={`mailto:${person.email}`}
           target="_blank"
@@ -320,9 +321,10 @@ export const ContactSection = () => {
           <FaInstagram />
         </a>
       </div>
+
         </motion.div>
   ))}
-  </div>
+
 </div>
       </motion.div>
 
