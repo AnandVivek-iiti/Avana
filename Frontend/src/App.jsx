@@ -5,7 +5,7 @@ import Home from './components/Home';
 import Member from './components/Member';
 import ContactSection from './components/Contact';
 import AboutUs from './components/About';
-
+import Margdarshan from './components/Events/Margdarshan';
 // import { Linkedin, Instagram } from 'lucide-react';
 import NotFound from './components/Notfound'
 import './App.css'
@@ -25,6 +25,7 @@ function App() {
       <Route path="/team" element={<Member />} />
       <Route path="/contact" element={<ContactSection />} />
       <Route path="/about" element={<AboutUs />} />
+      <Route path="/events/margdarshan" element={<Margdarshan />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
 
