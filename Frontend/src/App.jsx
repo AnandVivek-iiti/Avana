@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import Member from './components/Member';
+import ContactSection from './components/Contact';
 // import { Linkedin, Instagram } from 'lucide-react';
 import NotFound from './components/Notfound'
 import './App.css'
@@ -18,7 +19,8 @@ function App() {
      <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/member" element={<Member />} />
+      <Route path="/team" element={<Member />} />
+      <Route path="/contact" element={<ContactSection />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
 

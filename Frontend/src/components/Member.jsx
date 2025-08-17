@@ -5,18 +5,7 @@ import Instagram  from "../Images/Instagram.png";
 import head from "../Images/clubhead.png";
 
 export default function Member() {
-  const club = {
-    clubHead: [
-      {
-        name: "Ananya Sharma",
-        role: "President & Club Head",
-        image: "https://randomuser.me/api/portraits/women/44.jpg",
-        linkedin: "https://www.linkedin.com/in/ananya-sharma/",
-        instagram: "https://www.instagram.com/ananya_sharma/",
-        email: "ananya.sharma@example.com",
-      },
-    ],
-  };
+ 
 
   return (
     <div>
@@ -27,7 +16,7 @@ export default function Member() {
             <p className="text-lg text-gray-600">Anurag Singh</p>
           </div>
 
-          
+
         </div>
 
   );

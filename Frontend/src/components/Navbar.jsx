@@ -1,117 +1,4 @@
-// import Avana from "../assets/Avana.png";
-// import { Typewriter } from "react-simple-typewriter";
-// import { Link } from "react-router-dom";
-// import { useState, useEffect } from "react";
-// import { motion } from "framer-motion";
-// import { Sun, Moon } from "lucide-react"; // icons
 
-// export default function Navbar() {
-//   // ---------- Theme handling ----------
-//   const getInitialTheme = () => {
-//     if (typeof window === "undefined") return true; // default dark on SSR
-//     const saved = localStorage.getItem("theme");
-//     if (saved) return saved === "dark";
-//     // fallback to system preference
-//     return (
-//       window.matchMedia &&
-//       window.matchMedia("(prefers-color-scheme: dark)").matches
-//     );
-//   };
-
-//   const [menuOpen, setMenuOpen] = useState(false);
-//   const [darkMode, setDarkMode] = useState(getInitialTheme());
-
-//   useEffect(() => {
-//     const root = document.documentElement;
-//     if (darkMode) {
-//       root.classList.add("dark");
-//       localStorage.setItem("theme", "dark");
-//     } else {
-//       root.classList.remove("dark");
-//       localStorage.setItem("theme", "light");
-//     }
-//   }, [darkMode]);
-
-//   return (
-//     <>
-//       <div className="container sticky top-0 z-50">
-
-//         <nav
-//           className="
-//           flex justify-between items-center px-6 md:px-12 py-4
-//           bg-black/10 dark:bg-white/5 backdrop-blur-md sticky top-0 z-50
-//         "
-//         >
-//           <div className="flex items-center gap-3">
-//             <img src={Avana} alt="Avana Logo" className="h-14 w-14" />
-//             <span className="text-2xl font-extrabold bg-gradient-to-r from-yellow-300 to-orange-400 bg-clip-text text-transparent">
-//               AVANA
-//             </span>
-//           </div>
-
-//           {/* Desktop Menu */}
-//           <ul className="hidden md:flex gap-8 font-medium text-lg">
-//             {["About", "Events", "Members", "Contact"].map((item, i) => (
-//               <li key={i}>
-//                 <Link
-//                   to={`/${item.toLowerCase()}`}
-//                   className="hover:text-yellow-400 transition duration-300"
-//                 >
-//                   {item}
-//                 </Link>
-//               </li>
-//             ))}
-//           </ul>
-
-//           <div className="flex items-center gap-3">
-//             {/* Theme Toggle */}
-//             <button
-//               onClick={() => setDarkMode((d) => !d)}
-//               className="p-2 rounded-full hover:bg-yellow-300 hover:text-black transition"
-//               aria-label="Toggle theme"
-//               title="Toggle theme"
-//             >
-//               {darkMode ? <Sun size={22} /> : <Moon size={22} />}
-//             </button>
-
-//             {/* CTA */}
-//             <button className="hidden md:block bg-yellow-400 text-black px-5 py-2 rounded-xl font-semibold hover:bg-white hover:text-green-800 transition duration-300">
-//               Get Started →
-//             </button>
-
-//             {/* Mobile Menu */}
-//             <button
-//               onClick={() => setMenuOpen((o) => !o)}
-//               className="md:hidden text-2xl"
-//             >
-//               ☰
-//             </button>
-//           </div>
-//         </nav>
-
-//         {/* Mobile Dropdown */}
-//         {menuOpen && (
-//           <motion.ul
-//             className="flex flex-col items-center gap-4 py-4 bg-black/20 dark:bg-white/10 md:hidden"
-//             initial={{ y: -20, opacity: 0 }}
-//             animate={{ y: 0, opacity: 1 }}
-//           >
-//             {["About", "Events", "Members", "Contact"].map((item, i) => (
-//               <li key={i}>
-//                 <Link
-//                   to={`/${item.toLowerCase()}`}
-//                   className="hover:text-yellow-400 transition duration-300"
-//                 >
-//                   {item}
-//                 </Link>
-//               </li>
-//             ))}
-//           </motion.ul>
-//         )}
-//       </div>
-//     </>
-//   );
-// }
 import Avana from "../assets/Avana.png";
 import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-router-dom";
@@ -129,6 +16,7 @@ export default function Navbar() {
       window.matchMedia("(prefers-color-scheme: dark)").matches
     );
   };
+const items = ["About", "Events", "Gallery", "Team", "Contact"];
 
   const [menuOpen, setMenuOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(getInitialTheme());
@@ -161,7 +49,7 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-8 font-medium text-lg">
-          {["About", "Events", "Member", "Contact"].map((item, i) => (
+          {items.map((item, i) => (
             <li key={i}>
               <Link
                 to={`/${item.toLowerCase()}`}
@@ -206,7 +94,7 @@ export default function Navbar() {
           initial={{ y: -20, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
         >
-          {["About", "Events", "Member", "Contact"].map((item, i) => (
+          {items.map((item, i) => (
             <li key={i}>
               <Link
                 to={`/${item.toLowerCase()}`}
