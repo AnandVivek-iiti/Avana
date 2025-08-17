@@ -83,7 +83,7 @@ export default function App() {
           </p>
 
           <button className="mt-8 bg-yellow-400 text-black px-6 py-3 rounded-xl font-bold shadow-lg hover:scale-105 hover:bg-white hover:text-green-800 transition duration-300">
-            <a href="/about">Get Started →</a>
+            <a href="/#/about">Get Started →</a>
           </button>
           <br />
           </div>
