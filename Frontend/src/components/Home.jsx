@@ -71,7 +71,7 @@ export default function App() {
             </span>
           </h1>
 
-          <p className="mt-5 text-lg md:text-xl text-gray-800 dark:text-gray-200 leading-relaxed">
+          <p className="mt-5 text-lg md:text-xl text-black dark:text-gray-200 leading-relaxed">
             Avana is a student-driven social welfare club at IIT Indore,
             dedicated to uplifting underprivileged communities. Rooted in
             empathy, inclusivity, and service, we work through initiatives like
