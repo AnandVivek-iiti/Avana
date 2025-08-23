@@ -1,4 +1,3 @@
-
 import Avana from "../assets/Avana.png";
 import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-router-dom";
@@ -75,7 +74,7 @@ export default function Navbar() {
                           .toLowerCase()
                           .replace(/ /g, "-")}`}
                         className="flex items-center gap-2 px-4 py-2 hover:bg-yellow-100 dark:hover:bg-gray-800 rounded-lg transition"
-                        onClick={() => setEventsOpen(false)} // close after click
+                        onClick={() => setEventsOpen(false)}
                       >
                         <span className="text-xl">{ev.emoji}</span>
                         <span className="font-medium">{ev.name}</span>
@@ -84,8 +83,16 @@ export default function Navbar() {
                   </div>
                 )}
               </li>
-            )  :
-            (
+            ) : item === "Home" ? (
+              <li key={i}>
+                <Link
+                  to="/"
+                  className="hover:text-yellow-400 transition duration-300 flex items-center gap-1"
+                >
+                  <Home size={18} /> Home
+                </Link>
+              </li>
+            ) : (
               <li key={i}>
                 <Link
                   to={`/${item.toLowerCase()}`}
