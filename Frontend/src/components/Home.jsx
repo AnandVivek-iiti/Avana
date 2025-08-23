@@ -43,7 +43,7 @@ export default function App() {
   }, [darkMode]);
 
   return (
-    <div className="bg-gradient-to-br from-indigo-100 to-slate-50 text-white  w-full h-screen">
+    <div className="bg-gradient-to-br from-indigo-100 to-slate-50 text-black  w-full h-screen">
       {/* <div
       className="
         min-h-screen flex flex-col
