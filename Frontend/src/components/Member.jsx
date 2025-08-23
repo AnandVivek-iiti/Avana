@@ -35,7 +35,7 @@ export default function Member() {
           className="h-40 w-40 rounded-full object-cover shadow-2xl border-4 border-white"
         />
         <h2 className="text-3xl font-bold mt-4">{members[1].role}</h2>
-        <p className="text-xl text-gray-200">{members[1].name}</p>
+        <p className="text-xl text-black">{members[1].name}</p>
       </div>
       </div>
       {/* Other Members */}
@@ -51,7 +51,7 @@ export default function Member() {
               className="h-28 w-28 rounded-full object-cover shadow-lg border-2 border-white"
             />
             <h3 className="text-2xl font-semibold mt-3">{member.role}</h3>
-            <p className="text-lg text-gray-200">{member.name}</p>
+            <p className="text-lg text-black">{member.name}</p>
           </div>
         ))}
       </div>
