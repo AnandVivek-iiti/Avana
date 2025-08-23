@@ -52,7 +52,7 @@ const contacts = [
 
 export const ContactSection = () => {
   return (
-    <div className="relative py-10 px-2 md:py-20 md:px-6 overflow-hidden text-white">
+    <div className="relative py-10 px-2 md:py-20 md:px-6 overflow-hidden text-black min-h-screen flex flex-col items-center justify-center bg-[#12121b]">
       {/* Animated Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-indigo-100 to-slate-50 animate-gradient-x opacity-30 -z-10"></div>
 
