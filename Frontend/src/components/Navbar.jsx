@@ -84,18 +84,7 @@ export default function Navbar() {
                   </div>
                 )}
               </li>
-            ) :
-            item === "Home" ?
-            (
-              <li key={i} className="relative">
-                <button
-                  onClick={() => setEventsOpen((open) => !open)}
-                  className="hover:text-yellow-400 transition cursor-pointer duration-300 flex items-center gap-1"
-                >
-                  Home
-                </button>
-              </li>
-            ) :
+            )  :
             (
               <li key={i}>
                 <Link
