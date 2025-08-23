@@ -25,7 +25,7 @@ export default function Member() {
           className="h-40 w-40 rounded-full object-cover shadow-2xl border-4 border-white"
         />
         <h2 className="text-3xl font-bold mt-4">{members[0].role}</h2>
-        <p className="text-xl text-gray-200">{members[0].name}</p>
+        <p className="text-xl text-black">{members[0].name}</p>
       </div>
  {/* Margdarshan Head Section */}
       <div className="flex flex-col items-center mb-16">
