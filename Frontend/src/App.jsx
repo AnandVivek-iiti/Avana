@@ -21,7 +21,7 @@ function App() {
 
   return (
 <>
-<div className="bg-gradient-to-r from-green-400 to-blue-500 text-white  w-full ">
+<div className="bg-gradient-to-br from-indigo-100 to-slate-50 text-black w-full ">
 
 
 
