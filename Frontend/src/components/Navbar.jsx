@@ -4,7 +4,7 @@ import { Typewriter } from "react-simple-typewriter";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Sun, Moon } from "lucide-react";
+import { Sun, Moon, Home } from "lucide-react";
 
 export default function Navbar() {
   const getInitialTheme = () => {
@@ -16,7 +16,7 @@ export default function Navbar() {
       window.matchMedia("(prefers-color-scheme: dark)").matches
     );
   };
-  const items = ["About", "Events", "Gallery", "Team", "Contact"];
+  const items = ["About", "Events", "Gallery", "Team", "Contact", "Home"];
   const events = [
     { name: "Cloth Donation" },
     { name: "Margdarshan" },
