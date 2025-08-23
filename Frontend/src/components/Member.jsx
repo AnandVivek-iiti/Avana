@@ -14,7 +14,7 @@ export default function Member() {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-green-400 to-blue-500 text-white min-h-screen flex flex-col items-center py-12 px-4">
+    <div className="bg-gradient-to-br from-indigo-100 to-slate-50 text-black min-h-screen flex flex-col items-center py-12 px-4">
       <h1 className="text-4xl font-extrabold mb-12">Member Area</h1>
       <div className="Head-container flex p-10 gap-10 ">
       {/* Club Head Section */}
