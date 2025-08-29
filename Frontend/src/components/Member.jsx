@@ -6,9 +6,9 @@ export default function Member() {
   const members = [
     { name: "Anurag Singh", role: "Club Head", img: head },
     { name: "Ayush Sharma", role: "Margdarshan Head", img: head },
-    { name: "Priya Verma", role: "Member", img: head },
-    { name: "Amit Kumar", role: "Member", img: head },
-    { name: "Sneha Patel", role: "Member", img: head },
+    { name: "Anand Vivek", role: "Member", img: head },
+    { name: "Anand Vivek", role: "Member", img: head },
+    { name: "Anand Vivek", role: "Member", img: head },
     { name: "Anand Vivek", role: "Member", img: head },
 
   ];
