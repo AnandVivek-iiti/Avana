@@ -20,19 +20,20 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div
-                className="w-10 h-10 rounded-xl flex items-center justify-center shadow-lg"
-                style={{
-                  background: 'linear-gradient(135deg, var(--green-mid), var(--green-deep))',
-                }}
+                className="w-20 h-20 rounded-xl flex items-center justify-center shadow-lg"
+
               >
-                <span className="text-white font-black text-sm">A</span>
+                <img
+             src='/assets/Avana.png'
+             alt="Avana"
+             />
               </div>
               <div>
-                <span className="text-xl font-black tracking-wider" style={{ color: 'var(--text-primary)' }}>
+                <span className="text-2xl font-black tracking-wider" style={{ color: 'var(--text-primary)' }}>
                   AVANA
                 </span>
                 <span
-                  className="block text-[10px] tracking-[0.2em] uppercase font-medium -mt-0.5"
+                  className="block text-[15px] tracking-[0.2em] uppercase font-medium -mt-0.5"
                   style={{ color: 'var(--green-mid)' }}
                 >
                   IIT Indore

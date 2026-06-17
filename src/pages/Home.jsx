@@ -3,67 +3,44 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Heart, BookOpen, Leaf, Users, Star, Zap, ChevronDown } from 'lucide-react';
 
+/* ── AVANA hero wordmark — single continuous stroke draw + flash ── */
 function AuroraHeading() {
   return (
-    <div className="relative inline-block">
-      <svg
-        viewBox="0 0 720 180"
-        className="avana-svg-title"
-        aria-label="AVANA"
-      >
+    <svg viewBox="0 0 720 180" className="avana-svg-title" aria-label="AVANA">
+      <defs>
+        <filter id="inkglow" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur" />
+          <feMerge>
+            <feMergeNode in="blur" />
+            <feMergeNode in="SourceGraphic" />
+          </feMerge>
+        </filter>
+        <linearGradient id="sweepGrad" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0%" stopColor="#fff" stopOpacity="0" />
+          <stop offset="50%" stopColor="#fff" stopOpacity="0.9" />
+          <stop offset="100%" stopColor="#fff" stopOpacity="0" />
+        </linearGradient>
+        <clipPath id="letterClip">
+          <path
+            d="M100,160 L140,20 L180,160 M200,20 L240,160 L280,20 M300,160 L340,20 L380,160 M420,160 L420,20 L500,160 L500,20 M550,160 L590,20 L630,160"
+            fill="none" stroke="#000" strokeWidth="22" strokeLinecap="round" strokeLinejoin="round"
+          />
+        </clipPath>
+      </defs>
 
+      <g className="avana-settle">
+        <path
+          className="avana-stroke"
+          d="M100,160 L140,20 L180,160 M116,110 L164,110 M200,20 L240,160 L280,20 M300,160 L340,20 L380,160 M316,110 L364,110 M420,160 L420,20 L500,160 L500,20 M550,160 L590,20 L630,160 M566,110 L614,110"
+          fill="none" stroke="#1a5c2e" strokeWidth="22" strokeLinecap="round" strokeLinejoin="round"
+          filter="url(#inkglow)"
+        />
 
-        {/* DRAW LAYER – deep forest green ink, bold strokes */}
-        <g className="avana-draw" fill="none" stroke="#1a3d20" strokeWidth="22" strokeLinecap="round" strokeLinejoin="round">
-          {/* A1 */}
-          <line className="avana-A1L" x1="140" y1="20" x2="100" y2="160" />
-          <line className="avana-A1R" x1="140" y1="20" x2="180" y2="160" />
-          <line className="avana-A1B" x1="116" y1="110" x2="164" y2="110" />
-          {/* V */}
-          <line className="avana-VL" x1="200" y1="20" x2="240" y2="160" />
-          <line className="avana-VR" x1="280" y1="20" x2="240" y2="160" />
-          {/* A2 */}
-          <line className="avana-A2L" x1="340" y1="20" x2="300" y2="160" />
-          <line className="avana-A2R" x1="340" y1="20" x2="380" y2="160" />
-          <line className="avana-A2B" x1="316" y1="110" x2="364" y2="110" />
-        {/* N */}
-<line className="avana-NL" x1="420" y1="20" x2="420" y2="160" />
-<line className="avana-ND" x1="420" y1="20" x2="500" y2="160" />
-<line className="avana-NR" x1="500" y1="20" x2="500" y2="160" />
- {/* A3 */}
-<line className="avana-A3L" x1="590" y1="20" x2="550" y2="160" />
-<line className="avana-A3R" x1="590" y1="20" x2="630" y2="160" />
-<line className="avana-A3B" x1="566" y1="110" x2="614" y2="110" />    </g>
-
-        {/* SOLID FILL LAYER – settles on top after draw, forest green */}
-        {/* <g fill="none" stroke="#1a5c2e" strokeWidth="20" strokeLinecap="round" strokeLinejoin="round">
-          <g className="fill-A1" opacity="0">
-            <line x1="140" y1="20" x2="100" y2="160" />
-            <line x1="140" y1="20" x2="180" y2="160" />
-            <line x1="116" y1="110" x2="164" y2="110" />
-          </g>
-          <g className="fill-V" opacity="0">
-            <line x1="200" y1="20" x2="240" y2="160" />
-            <line x1="280" y1="20" x2="240" y2="160" />
-          </g>
-          <g className="fill-A2" opacity="0">
-            <line x1="340" y1="20" x2="300" y2="160" />
-            <line x1="340" y1="20" x2="380" y2="160" />
-            <line x1="316" y1="110" x2="364" y2="110" />
-          </g>
-          <g className="fill-N" opacity="0">
-            <line x1="400" y1="20" x2="400" y2="160" />
-            <line x1="400" y1="20" x2="480" y2="160" />
-            <line x1="480" y1="20" x2="480" y2="160" />
-          </g>
-          <g className="fill-A3" opacity="0">
-            <line x1="540" y1="20" x2="500" y2="160" />
-            <line x1="540" y1="20" x2="580" y2="160" />
-            <line x1="516" y1="110" x2="564" y2="110" />
-          </g>
-        </g> */}
-      </svg>
-    </div>
+        <g className="avana-flash-layer" clipPath="url(#letterClip)">
+          <rect className="avana-flash-rect" x="-200" y="0" width="200" height="180" fill="url(#sweepGrad)" />
+        </g>
+      </g>
+    </svg>
   );
 }
 
@@ -120,10 +97,10 @@ const PILLARS = [
 ];
 
 const STATS = [
-  { value: '500+', label: 'Volunteers' },
+  { value: '50+', label: 'Volunteers' },
   { value: '12+', label: 'Events / Year' },
-  { value: '5000+', label: 'Lives Touched' },
-  { value: '3+', label: 'Years Active' },
+  { value: '500+', label: 'Lives Touched' },
+  { value: '7+', label: 'Years Active' },
 ];
 
 const EVENTS = [
@@ -167,9 +144,12 @@ export default function Home() {
             style={{ background: 'rgba(26,92,46,0.1)', border: '1px solid rgba(26,92,46,0.22)', color: 'var(--green-mid)' }}
           >
             <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: 'var(--green-light)' }} />
-            IIT Indore · Social Impact Club · Est. 2021
+            IIT Indore · Social Impact Club · Est. 2017
           </motion.div>
 
+
+
+       
 
           <motion.div
             initial={{ opacity: 0, y: 40 }}

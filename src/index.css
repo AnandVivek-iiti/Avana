@@ -135,12 +135,12 @@ body {
 
 nav { transition: background 0.4s ease, backdrop-filter 0.4s ease, border-color 0.4s ease; }
 
-
-
 /* ════════════════════════════════════════
-   AVANA SVG HERO TITLE
-   viewBox 680×180, letters centered (x: 115–595), y: 20–160
-   Two-pass: draw layer (dark ink) → fill layer (forest green)
+   AVANA SVG HERO TITLE — single continuous stroke reveal
+   viewBox 720×180. One <path> traces all five letters as one
+   pen stroke (foot → peak → foot, with pen-lifts for crossbars
+   and letter jumps), then a clipped light flash sweeps across
+   the finished wordmark.
    ════════════════════════════════════════ */
 
 .avana-svg-title {
@@ -150,34 +150,41 @@ nav { transition: background 0.4s ease, backdrop-filter 0.4s ease, border-color 
   margin: 0 auto;
 }
 
-/* ── 1. DRAW LAYER – stroke-dashoffset reveal ── */
-/* Lengths: diagonal legs ≈146px, crossbar ≈52px, N-vert=140px, N-diag≈161px */
-.avana-draw line {
-  stroke-dasharray: 300;
-  stroke-dashoffset: 300;
+/* ── DRAW LAYER — single path, stroke-dashoffset reveal ── */
+.avana-stroke {
+  stroke-dasharray: 1750px;
+  stroke-dashoffset: 1750px;
+  animation: avana-draw-single 4.2s cubic-bezier(0.45, 0.05, 0.25, 1) 0.1s forwards;
 }
 
-.avana-A1L { --len: 148px; animation: avana-draw 0.55s cubic-bezier(0.65,0,0.35,1) 0.20s forwards; }
-.avana-A1R { --len: 148px; animation: avana-draw 0.45s cubic-bezier(0.65,0,0.35,1) 0.65s forwards; }
-.avana-A1B { --len: 52px;  animation: avana-draw 0.22s cubic-bezier(0.65,0,0.35,1) 1.02s forwards; }
-.avana-VL  { --len: 148px; animation: avana-draw 0.45s cubic-bezier(0.65,0,0.35,1) 1.30s forwards; }
-.avana-VR  { --len: 148px; animation: avana-draw 0.45s cubic-bezier(0.65,0,0.35,1) 1.70s forwards; }
-.avana-A2L { --len: 148px; animation: avana-draw 0.55s cubic-bezier(0.65,0,0.35,1) 2.18s forwards; }
-.avana-A2R { --len: 148px; animation: avana-draw 0.45s cubic-bezier(0.65,0,0.35,1) 2.65s forwards; }
-.avana-A2B { --len: 52px;  animation: avana-draw 0.22s cubic-bezier(0.65,0,0.35,1) 3.02s forwards; }
-.avana-NL  { --len: 140px; animation: avana-draw 0.40s cubic-bezier(0.65,0,0.35,1) 3.30s forwards; }
-.avana-ND  { --len: 161px; animation: avana-draw 0.50s cubic-bezier(0.65,0,0.35,1) 3.65s forwards; }
-.avana-NR  { --len: 140px; animation: avana-draw 0.40s cubic-bezier(0.65,0,0.35,1) 4.10s forwards; }
-.avana-A3L { --len: 148px; animation: avana-draw 0.55s cubic-bezier(0.65,0,0.35,1) 4.52s forwards; }
-.avana-A3R { --len: 148px; animation: avana-draw 0.45s cubic-bezier(0.65,0,0.35,1) 4.99s forwards; }
-.avana-A3B { --len: 52px;  animation: avana-draw 0.22s cubic-bezier(0.65,0,0.35,1) 5.36s forwards; }
-
-@keyframes avana-draw {
+@keyframes avana-draw-single {
   to { stroke-dashoffset: 0; }
 }
 
-/* Very subtle living pulse so the settled title feels alive */
+/* ── FLASH LAYER — clipped light sweep once the draw completes ── */
+.avana-flash-layer {
+  opacity: 0;
+  animation: avana-flash-fade 1.3s ease-out 4.5s forwards;
+}
+.avana-flash-rect {
+  animation: avana-flash-sweep 1.1s ease-in-out 4.5s forwards;
+}
+
+@keyframes avana-flash-sweep {
+  from { transform: translateX(-200px); }
+  to   { transform: translateX(900px); }
+}
+@keyframes avana-flash-fade {
+  0%, 70% { opacity: 1; }
+  100%    { opacity: 0; }
+}
+
+/* ── Subtle living settle once everything has finished ── */
+.avana-settle {
+  animation: avana-breathe 4s ease-in-out 6s infinite;
+}
+
 @keyframes avana-breathe {
-  0%,100% { opacity: 1; }
-  50%      { opacity: 0.82; }
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.93; }
 }

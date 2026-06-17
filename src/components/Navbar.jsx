@@ -43,21 +43,16 @@ export default function Navbar() {
 
           {/* ── LOGO ── */}
           <Link to="/" className="flex items-center gap-3 group">
-            {/* Flame icon */}
+            {/*  icon */}
             <div className="relative w-9 h-9 flex items-center justify-center">
               <div
                 className="absolute inset-0 rounded-xl opacity-20 group-hover:opacity-35 transition-opacity duration-300"
                 style={{ background: 'linear-gradient(135deg,#1a5c2e,#f5c842)' }}
               />
-              <svg width="22" height="26" viewBox="0 0 22 26" fill="none">
-                {/* wreath hint */}
-                <ellipse cx="11" cy="20" rx="9" ry="4" fill="#1a5c2e" opacity="0.25"/>
-                {/* hands */}
-                <path d="M7 16 C5 13 4 10 6 8 C7 11 9 12 11 14 C13 12 15 11 16 8 C18 10 17 13 15 16 C13 18 9 18 7 16Z" fill="#7a4a1e" opacity="0.85"/>
-                {/* flame */}
-                <path d="M11 2 C11 2 8 6 9 9 C9.5 11 11 12 11 12 C11 12 12.5 11 13 9 C14 6 11 2 11 2Z" fill="#f5c842"/>
-                <path d="M11 4 C11 4 9.5 7 10 9 C10.3 10.2 11 11 11 11 C11 11 11.7 10.2 12 9 C12.5 7 11 4 11 4Z" fill="#e8710a"/>
-              </svg>
+             <img
+             src='/assets/Avana.png'
+             alt="Avana"
+             />
             </div>
             {/* AVANA wordmark with light sweep */}
             <div>

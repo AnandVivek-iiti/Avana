@@ -1,47 +1,88 @@
-import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ChevronLeft, ChevronRight, ImageOff } from 'lucide-react';
+import { EVENTS } from '../data/events';
 
-const EVENTS = [
-  {
-    name: 'Margdarshan',
-    tag: 'Education',
-    emoji: '🧭',
-    accent: '#3b82f6',
-    desc: 'A flagship career guidance program connecting underprivileged students with IIT Indore mentors for academic and professional direction.',
-    highlights: ['Mock interviews', 'Career counselling', 'Subject mentorship', '100+ students guided'],
-  },
-  {
-    name: 'Blood Donation Camp',
-    tag: 'Health',
-    emoji: '🩸',
-    accent: '#f43f5e',
-    desc: 'Life-saving blood donation drives organized on campus in collaboration with regional hospitals and blood banks.',
-    highlights: ['On-campus drives', 'Hospital partnerships', 'Awareness sessions', 'Emergency response'],
-  },
-  {
-    name: 'Cloth Donation Drive',
-    tag: 'Welfare',
-    emoji: '👕',
-    accent: '#10b981',
-    desc: 'Collecting and distributing warm clothing to families in need, especially before winter months.',
-    highlights: ['Campus collections', 'Community distribution', 'Winter relief', 'All-year active'],
-  },
-  {
-    name: 'Old Age Home Visit',
-    tag: 'Community',
-    emoji: '🏠',
-    accent: '#f59e0b',
-    desc: 'Regular visits to care homes in Indore to spend quality time with elderly residents, bringing joy and companionship.',
-    highlights: ['Monthly visits', 'Cultural programs', 'Gift distributions', 'Personal bonding'],
-  },
-  {
-    name: 'Diwali Celebration',
-    tag: 'Culture',
-    emoji: '✨',
-    accent: '#8b5cf6',
-    desc: 'Spreading the festival of lights to underprivileged communities — with sweets, gifts, and celebrations for all.',
-    highlights: ['Community celebrations', 'Children\'s programs', 'Gift distributions', 'Festival events'],
-  },
-];
+function EventImageCarousel({ images, accent, emoji }) {
+  const [idx, setIdx] = useState(0);
+
+  if (!images || images.length === 0) {
+    return (
+      <div
+        className="w-full h-full flex flex-col items-center justify-center gap-2 rounded-xl"
+        style={{ background: `${accent}10`, border: `1px dashed ${accent}30` }}
+      >
+        <span className="text-4xl">{emoji}</span>
+        <span className="text-[10px] font-medium" style={{ color: `${accent}80` }}>Photos coming soon</span>
+      </div>
+    );
+  }
+
+  const prev = (e) => { e.stopPropagation(); setIdx((i) => (i - 1 + images.length) % images.length); };
+  const next = (e) => { e.stopPropagation(); setIdx((i) => (i + 1) % images.length) ; };
+
+  return (
+    <div className="relative w-full h-full rounded-xl overflow-hidden group/carousel">
+      <AnimatePresence mode="wait">
+        <motion.img
+          key={idx}
+          src={images[idx]}
+          alt={`event-${idx}`}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.25 }}
+          className="w-full h-full object-cover"
+        />
+      </AnimatePresence>
+
+      {images.length > 1 && (
+        <>
+          <button
+            onClick={prev}
+            className="absolute left-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-lg flex items-center justify-center
+                       opacity-0 group-hover/carousel:opacity-100 transition-opacity duration-200"
+            style={{ background: 'rgba(0,0,0,0.5)', backdropFilter: 'blur(6px)' }}
+          >
+            <ChevronLeft size={14} className="text-white" />
+          </button>
+          <button
+            onClick={next}
+            className="absolute right-2 top-1/2 -translate-y-1/2 w-7 h-7 rounded-lg flex items-center justify-center
+                       opacity-0 group-hover/carousel:opacity-100 transition-opacity duration-200"
+            style={{ background: 'rgba(0,0,0,0.5)', backdropFilter: 'blur(6px)' }}
+          >
+            <ChevronRight size={14} className="text-white" />
+          </button>
+
+          {/* dots */}
+          <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1">
+            {images.map((_, i) => (
+              <button
+                key={i}
+                onClick={(e) => { e.stopPropagation(); setIdx(i); }}
+                className="rounded-full transition-all duration-200"
+                style={{
+                  width: i === idx ? 16 : 5,
+                  height: 5,
+                  background: i === idx ? accent : 'rgba(255,255,255,0.5)',
+                }}
+              />
+            ))}
+          </div>
+        </>
+      )}
+
+      {/* image count badge */}
+      <div
+        className="absolute top-2 right-2 px-2 py-0.5 rounded-md text-[10px] font-semibold"
+        style={{ background: 'rgba(0,0,0,0.45)', backdropFilter: 'blur(6px)', color: '#fff' }}
+      >
+        {idx + 1}/{images.length}
+      </div>
+    </div>
+  );
+}
 
 export default function Events() {
   return (
@@ -77,39 +118,39 @@ export default function Events() {
                 border: '1px solid var(--border)',
               }}
             >
+              {/* left accent bar */}
               <div
                 className="absolute left-0 top-0 bottom-0 w-1 rounded-l-2xl"
                 style={{ background: ev.accent }}
               />
+              {/* hover glow */}
               <div
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 style={{ background: `radial-gradient(circle at 0% 50%, ${ev.accent}08 0%, transparent 60%)` }}
               />
 
-              <div className="relative flex flex-col md:flex-row md:items-start gap-6">
-                <div className="flex items-center gap-4 md:w-64 shrink-0">
-                  <span className="text-5xl">{ev.emoji}</span>
-                  <div>
-                    <span
-                      className="inline-block px-3 py-0.5 rounded-full text-xs font-semibold mb-2"
-                      style={{
-                        background: `${ev.accent}20`,
-                        color: ev.accent,
-                        border: `1px solid ${ev.accent}30`,
-                      }}
-                    >
-                      {ev.tag}
-                    </span>
-                    <h3 className="text-xl font-bold" style={{ color: 'var(--text-primary)' }}>
-                      {ev.name}
-                    </h3>
+              <div className="relative flex flex-col lg:flex-row gap-6">
+                {/* Left: meta + desc + highlights */}
+                <div className="flex-1 flex flex-col gap-5">
+                  <div className="flex items-center gap-4">
+                    <span className="text-5xl">{ev.emoji}</span>
+                    <div>
+                      <span
+                        className="inline-block px-3 py-0.5 rounded-full text-xs font-semibold mb-2"
+                        style={{ background: `${ev.accent}20`, color: ev.accent, border: `1px solid ${ev.accent}30` }}
+                      >
+                        {ev.tag}
+                      </span>
+                      <h3 className="text-xl font-bold" style={{ color: 'var(--text-primary)' }}>
+                        {ev.name}
+                      </h3>
+                    </div>
                   </div>
-                </div>
 
-                <div className="flex-1">
-                  <p className="mb-5 leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+                  <p className="leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
                     {ev.desc}
                   </p>
+
                   <div className="flex flex-wrap gap-2">
                     {ev.highlights.map((h) => (
                       <span
@@ -125,6 +166,11 @@ export default function Events() {
                       </span>
                     ))}
                   </div>
+                </div>
+
+                {/* Right: image carousel */}
+                <div className="lg:w-72 xl:w-80 h-48 lg:h-auto flex-shrink-0">
+                  <EventImageCarousel images={ev.images} accent={ev.accent} emoji={ev.emoji} />
                 </div>
               </div>
             </motion.div>

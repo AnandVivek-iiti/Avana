@@ -1,12 +1,16 @@
-const GALLERY_ITEMS = [
-  { caption: 'Blood Donation Camp', tag: 'Health', color: '#f43f5e', emoji: '🩸' },
-  { caption: 'Blood Donation Camp', tag: 'Health', color: '#f43f5e', emoji: '🩸' },
-  { caption: 'Blood Donation Camp', tag: 'Health', color: '#f43f5e', emoji: '🩸' },
-  { caption: 'Margdarshan Session', tag: 'Education', color: '#3b82f6', emoji: '🧭' },
-  { caption: 'Margdarshan Session', tag: 'Education', color: '#3b82f6', emoji: '🧭' },
-  { caption: 'Margdarshan Session', tag: 'Education', color: '#3b82f6', emoji: '🧭' },
-  { caption: 'Cloth Donation Drive', tag: 'Welfare', color: '#10b981', emoji: '👕' },
-  { caption: 'Diwali Celebration', tag: 'Culture', color: '#f59e0b', emoji: '✨' },
-  { caption: 'Old Age Home Visit', tag: 'Community', color: '#8b5cf6', emoji: '🏠' },
+export const GALLERY_ITEMS = [
+  { src: '/Gallery/B.png',            caption: 'Blood Donation Camp',  tag: 'Health',    color: '#f43f5e', emoji: '🩸' },
+  { src: '/Gallery/B1.png',           caption: 'Blood Donation Camp',  tag: 'Health',    color: '#f43f5e', emoji: '🩸' },
+  { src: '/Gallery/B2.png',           caption: 'Blood Donation Camp',  tag: 'Health',    color: '#f43f5e', emoji: '🩸' },
+  { src: '/Gallery/B3.png',           caption: 'Blood Donation Camp',  tag: 'Health',    color: '#f43f5e', emoji: '🩸' },
+  { src: '/Gallery/B4.png',           caption: 'Blood Donation Camp',  tag: 'Health',    color: '#f43f5e', emoji: '🩸' },
+  { src: '/Gallery/B5.png',           caption: 'Blood Donation Camp',  tag: 'Health',    color: '#f43f5e', emoji: '🩸' },
+  { src: '/Gallery/Margdarshan1.png', caption: 'Margdarshan Session',  tag: 'Education', color: '#3b82f6', emoji: '🧭' },
+  { src: '/Gallery/Margdarshan2.png', caption: 'Margdarshan Session',  tag: 'Education', color: '#3b82f6', emoji: '🧭' },
+  { src: '/Gallery/Margdarshan3.png', caption: 'Margdarshan Session',  tag: 'Education', color: '#3b82f6', emoji: '🧭' },
+  { src: '/Gallery/Margdarshan4.png', caption: 'Margdarshan Session',  tag: 'Education', color: '#3b82f6', emoji: '🧭' },
+  { src: '/Gallery/Margdarshan5.png', caption: 'Margdarshan Session',  tag: 'Education', color: '#3b82f6', emoji: '🧭' },
+  { src: '/Gallery/Margdarshan6.png', caption: 'Margdarshan Session',  tag: 'Education', color: '#3b82f6', emoji: '🧭' },
 ];
-export default GALLERY_ITEMS ;
+
+export const FILTERS = ['All', 'Health', 'Education', 'Welfare', 'Culture', 'Community'];

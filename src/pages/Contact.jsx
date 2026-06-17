@@ -1,16 +1,35 @@
 import { motion } from 'framer-motion';
 import { Mail, Phone, MapPin, Linkedin, Instagram, MessageCircle } from 'lucide-react';
 
+// ------------------------------------------------------------
+//  Only two contacts – Club Head & Web Dev Head
+// ------------------------------------------------------------
 const CONTACTS = [
-  { title: 'Club Head', name: 'Anurag Singh', email: 'me240003006@iiti.ac.in', phone: '+91 9675109428', linkedin: 'https://www.linkedin.com/in/anurag-singh', instagram: 'https://instagram.com/anurag_singh', accent: 'var(--green-mid)', emoji: '🎯' },
-  { title: 'Co-Head', name: 'Udaisri Yalavarhti', email: 'me240003006@iiti.ac.in', phone: '+91 9675109428', linkedin: '#', instagram: '#', accent: 'var(--flame-orange)', emoji: '🧭' },
-  { title: 'Web Developer', name: 'Anand Vivek', email: 'me240003006@iiti.ac.in', phone: '+91 9675109428', linkedin: 'https://www.linkedin.com/in/anand-vivek', instagram: 'https://instagram.com/anand_vivek', accent: 'var(--flame-yellow)', emoji: '💻' },
+  {
+    title: 'Club Head',
+    name: 'Mohnish Raj',
+    email: 'avana@iiti.ac.in',
+    linkedin: 'https://www.linkedin.com/in/avana-iiti',
+    instagram: 'https://instagram.com/avana_iit_indore',
+    accent: 'var(--green-mid)',
+    emoji: '🎯',
+  },
+  {
+    title: 'Web Dev Head',
+    name: 'Anand Vivek',
+    email: 'me240003006@iiti.ac.in',
+    linkedin: 'https://www.linkedin.com/in/anand-vivek',
+    instagram: 'https://instagram.com/anand_vivek',
+    accent: 'var(--flame-yellow)',
+    emoji: '💻',
+  },
 ];
 
 export default function Contact() {
   return (
     <div className="pt-24 pb-24 px-6 min-h-screen" style={{ backgroundColor: 'var(--bg-base)' }}>
       <div className="max-w-6xl mx-auto">
+        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -27,6 +46,7 @@ export default function Contact() {
           </p>
         </motion.div>
 
+        {/* Sidebar + Map */}
         <div className="grid lg:grid-cols-3 gap-8 mb-12">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -130,19 +150,7 @@ export default function Contact() {
                 >
                   <Linkedin size={18} />
                 </a>
-                <a
-                  href="https://whatsapp.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="p-3 rounded-xl transition-all"
-                  style={{
-                    background: 'rgba(34,197,94,0.1)',
-                    border: '1px solid rgba(34,197,94,0.2)',
-                    color: '#22c55e',
-                  }}
-                >
-                  <MessageCircle size={18} />
-                </a>
+
               </div>
             </div>
           </motion.div>
@@ -168,6 +176,7 @@ export default function Contact() {
           </motion.div>
         </div>
 
+        {/* Two contact cards */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -179,7 +188,7 @@ export default function Contact() {
           </h3>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="grid sm:grid-cols-2 gap-5">
           {CONTACTS.map((c, i) => (
             <motion.div
               key={i}
@@ -198,12 +207,13 @@ export default function Contact() {
                 className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                 style={{ background: `radial-gradient(circle at 50% 0%, ${c.accent}12 0%, transparent 70%)` }}
               />
+
               <div className="flex items-center gap-4 mb-5">
                 <div
-                  className="w-12 h-12 rounded-xl flex items-center justify-center text-xl"
+                  className="w-12 h-12 rounded-xl flex items-center justify-center text-2xl"
                   style={{
-                    background: `${c.accent}15`,
-                    border: `1px solid ${c.accent}25`,
+                    background: `${c.accent}20`,
+                    border: `1px solid ${c.accent}30`,
                   }}
                 >
                   {c.emoji}
@@ -217,6 +227,7 @@ export default function Contact() {
                   </p>
                 </div>
               </div>
+
               <div className="flex gap-2">
                 <a
                   href={`mailto:${c.email}`}
@@ -250,22 +261,26 @@ export default function Contact() {
                     color: '#ec4899',
                   }}
                 >
-                  <Instagram size={13} /> IG
+                  <Instagram size={13} /> instagram
                 </a>
               </div>
             </motion.div>
           ))}
         </div>
 
+        {/* Floating social icons (unchanged) */}
         <div className="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
           <a
-            href="https://whatsapp.com"
+            href={`mailto:${"avana@iiti.ac.in"}`}
             target="_blank"
             rel="noopener noreferrer"
             className="w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all hover:scale-110"
-            style={{ background: '#22c55e', color: 'white' }}
+            style={{
+                    background: 'rgba(255,255,255,0.05)',
+                    color: 'var(--text-muted)',
+                  }}
           >
-            <MessageCircle size={20} />
+            <Mail size={20} />
           </a>
           <a
             href="https://www.linkedin.com/in/avana-iiti"
