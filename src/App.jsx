@@ -1,5 +1,5 @@
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import { ThemeProvider } from './context/ThemeContext';
+import { ThemeProvider } from './context/Themecontext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
