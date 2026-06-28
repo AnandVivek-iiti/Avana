@@ -3,7 +3,6 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Heart, BookOpen, Leaf, Users, Star, Zap, ChevronDown } from 'lucide-react';
 
-/* ── AVANA hero wordmark — single continuous stroke draw + flash ── */
 function AuroraHeading() {
   return (
     <svg viewBox="0 0 720 180" className="avana-svg-title" aria-label="AVANA">
