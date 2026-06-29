@@ -58,6 +58,7 @@ export const HEADS = [
     year: "2nd",
     rollNo: "240008008",
     email: "che240008008@iiti.ac.in",
+    linkedin:"https://www.linkedin.com/in/bhukya-sethu-madhav-naik",
     initials: "SM",
     //photo:"https://drive.google.com/thumbnail?id=1VNwOvqpn6zIr_i2bek9uwQx5upsqNu6e&sz=w400",
     //https://drive.google.com/file/d/1e0oe4MKeBk7jcMLZXiUR4fgmYDCYYG8t/view?usp=sharing
@@ -193,6 +194,7 @@ export const LEADS = [
     year: "2nd",
     rollNo: "240001080",
     email: "cse240001080@iiti.ac.in",
+    linkedin: "https://www.linkedin.com/in/vikas-b76876325",
     initials: "VK",
     photo:
       "https://drive.google.com/thumbnail?id=1QJdc0RDzqo4_LC1nAoPKveKbebLvdzla&sz=w400",
