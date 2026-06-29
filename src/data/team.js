@@ -56,8 +56,10 @@ export const HEADS = [
     rollNo: "240008008",
     email: "che240008008@iiti.ac.in",
     initials: "SM",
+    //photo:"https://drive.google.com/thumbnail?id=1VNwOvqpn6zIr_i2bek9uwQx5upsqNu6e&sz=w400",
+    //https://drive.google.com/file/d/1e0oe4MKeBk7jcMLZXiUR4fgmYDCYYG8t/view?usp=sharing
     photo:
-      "https://drive.google.com/thumbnail?id=1VNwOvqpn6zIr_i2bek9uwQx5upsqNu6e&sz=w400",
+      "https://drive.google.com/thumbnail?id=e0oe4MKeBk7jcMLZXiUR4fgmYDCYYG8t&sz=w400",
     experience:
       "Leading the creative side for the Avana Blood Donation Drive was an incredible experience. Working with such a passionate, funny, and dedicated group of people was truly memorable. In Margdarshan we had so much fun interacting with kids, sharing stories, and making an impact.",
   },
@@ -336,8 +338,9 @@ export const MEMBERS = [
     rollNo: "2502171035",
     email: "mt2502171035@iiti.ac.in",
     initials: "DG",
+    // photo:"https://drive.google.com/thumbnail?id=15TOHz5f4skGuTTOs3va4WCYfxg_Uf9n1cT&sz=w400",
     photo:
-      "https://drive.google.com/thumbnail?id=15TOHz5f4skGuTTOs3va4WCYfxg_Uf9n1cT&sz=w400",
+      "https://drive.google.com/thumbnail?id=1bjY443sFAjJSyLgkM99uiwzl1A9c8p_B&sz=w400",
     experience: null,
   },
   {
