@@ -6,6 +6,7 @@ export const CLUB_HEAD = {
   year: "2nd",
   rollNo: "2402105027",
   email: "avana@iiti.ac.in",
+  linkedin: "https://www.linkedin.com/in/mohnish-raj-77b9aa230/",
   initials: "MR",
   quote: '"Leading with compassion, serving with purpose."',
   photo:
@@ -23,6 +24,7 @@ export const CO_HEADS = [
     year: "3rd",
     rollNo: "230002085",
     email: "avana@iiti.ac.in",
+    linkedin: "https://www.linkedin.com/in/dhanuka-samarth/",
     initials: "SD",
     //https://drive.google.com/file/d/1VsyAzWfXufs7WiGR3fOsqEpIzwbaR2op/view?usp=sharing
     photo:
@@ -38,6 +40,7 @@ export const CO_HEADS = [
     year: "2nd",
     rollNo: "240004034",
     email: "mc240041001@iiti.ac.in",
+    linkedin: "https://www.linkedin.com/in/prince-kumar-97005b332/",
     initials: "PK",
     //https://drive.google.com/file/d//view?usp=sharing
     photo:
@@ -71,6 +74,7 @@ export const HEADS = [
     year: "1st",
     rollNo: "250002037",
     email: "ee250002037@iiti.ac.in",
+    linkedin: "https://www.linkedin.com/in/mandeep-singh-068390395/",
     initials: "MS",
     photo:
       "https://drive.google.com/thumbnail?id=15MoNFPd3fDlE82zIBkF5IKenYpdsDFqs&sz=w400",
@@ -84,6 +88,7 @@ export const HEADS = [
     year: "1st",
     rollNo: null,
     email: null,
+    linkedin: "https://www.linkedin.com/in/dipika-bharadiya-6b5677399/",
     initials: "DB",
     photo:
       "https://drive.google.com/thumbnail?id=1-Pif-MmHTVaLcUX7jQ5jT0zgLtZ9bUA2&sz=w400",
@@ -111,6 +116,7 @@ export const HEADS = [
     year: "2nd",
     rollNo: "240041001",
     email: "mc240041001@iiti.ac.in",
+    linkedin: "https://www.linkedin.com/in/ayush-sharma-96013828a/",
     initials: "AS",
     photo:
       "https://drive.google.com/thumbnail?id=17_CylbYeO2H1_Y2CRYdtSMntrTomy8MA&sz=w400",
@@ -124,6 +130,7 @@ export const HEADS = [
     year: "3rd year",
     rollNo: null,
     email: "me240003006@iiti.ac.in",
+    linkedin: "https://www.linkedin.com/in/anandvivek1223/",
     initials: "AV",
     //https://drive.google.com/file/d/1TZvlLQP-lEPzTcOtOm3ou6pu3k4McGzK/view?usp=sharing
     photo:
@@ -142,6 +149,7 @@ export const LEADS = [
     rollNo: null,
     email: null,
     initials: "SB",
+    linkedin: "https://www.linkedin.com/in/shubh-baid",
     //https://drive.google.com/file/d/1jhxLdyERTnjqNM9o0wGY27MOf9S4jLpn/view?usp=sharing
     photo:
       "https://drive.google.com/thumbnail?id=1jhxLdyERTnjqNM9o0wGY27MOf9S4jLpn&sz=w400",
@@ -168,6 +176,7 @@ export const LEADS = [
     year: "1st",
     rollNo: null,
     email: null,
+    linkedin: "https://www.linkedin.com/in/parv-khandelwal-78b1693b8/",
     initials: "PK",
     photo:
       "https://drive.google.com/thumbnail?id=1uM7nq6FdqzPFg8_BGrpw1zaFl4frz6Di&sz=w400",
@@ -196,10 +205,11 @@ export const LEADS = [
     rollNo: "250004001",
     email: "ce250004001@iiti.ac.in",
     initials: "AK",
+    linkedin: "https://www.linkedin.com/in/abhijeet-kumar-verma-57469737a/",
     photo:
       "https://drive.google.com/thumbnail?id=1IfaeWifgO9S151TQqEHc_WvTRbzOGgMF&sz=w400",
     experience:
-      "It was an amazing experience to be a part of Avana club this year.",
+      "It was an amazing experience to be a part of Avana club and to learn new things.",
   },
   {
     name: "Aman Chauhan",
@@ -209,6 +219,7 @@ export const LEADS = [
     year: "1st",
     rollNo: "250005006",
     email: "mems250005006@iiti.ac.in",
+    linkedin: "https://www.linkedin.com/in/aman-chauhan-a48227397/",
     initials: "AC",
     photo:
       "https://drive.google.com/thumbnail?id=1Jjff5U188g-j5zK0WzUBFbneprtSKWTq&sz=w400",
