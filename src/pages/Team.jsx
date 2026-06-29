@@ -27,7 +27,7 @@ function Avatar({ m, size = 'md' }) {
           src={m.photo}
           alt={m.name}
           onError={() => setImgError(true)}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain"
         />
       </div>
     );
