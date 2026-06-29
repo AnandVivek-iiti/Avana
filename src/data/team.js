@@ -204,16 +204,17 @@ export const LEADS = [
   {
     name: "Aman Chauhan",
     role: "Social Media Lead",
-    dept: null,
-    category: null,
-    year: null,
-    rollNo: null,
-    email: null,
+    dept: "MEMS",
+    category: "B.Tech",
+    year: "1st",
+    rollNo: "250005006",
+    email: "mems250005006@iiti.ac.in",
     initials: "AC",
     photo:
       "https://drive.google.com/thumbnail?id=1Jjff5U188g-j5zK0WzUBFbneprtSKWTq&sz=w400",
     //https://drive.google.com/file/d/1Jjff5U188g-j5zK0WzUBFbneprtSKWTq/view?usp=sharing
-    experience: null,
+    experience:
+      "Lots of ups and downs, but seniors made my way through everything. I love being part of Avana.",
   },
 ];
 
@@ -396,20 +397,23 @@ export const MEMBERS = [
       "https://drive.google.com/thumbnail?id=1XwwXyC-mMHoAhiQdmBFYT9Xk66Cfq50P&sz=w400",
     experience: null,
   },
-  {
-    name: "Aman Kumar",
-    role: "Volunteer",
-    dept: "MEMS",
-    category: "B.Tech",
-    year: "1st",
-    rollNo: "250005006",
-    email: "mems250005006@iiti.ac.in",
-    initials: "AK",
-    photo:
-      "https://drive.google.com/thumbnail?id=1WDCDQiQe8seH3kylTNnBp8MAkI2b-_7P&sz=w400",
-    experience:
-      "Lots of ups and downs, but seniors made my way through everything. I love being part of Avana.",
-  },
+  
+  // {
+  //   name: "Aman Chauhan",
+  //   role: "Volunteer",
+  //   dept: "MEMS",
+  //   category: "B.Tech",
+  //   year: "1st",
+  //   rollNo: "250005006",
+  //   email: "mems250005006@iiti.ac.in",
+  //   initials: "AK",
+  //   photo:
+  //     "https://drive.google.com/thumbnail?id=1Jjff5U188g-j5zK0WzUBFbneprtSKWTq&sz=w400",
+  //   // photo:"https://drive.google.com/thumbnail?id=1WDCDQiQe8seH3kylTNnBp8MAkI2b-_7P&sz=w400",
+  //   experience:
+  //     "Lots of ups and downs, but seniors made my way through everything. I love being part of Avana.",
+  // },
+  
   {
     name: "Aishwarya Agrawal",
     role: "Volunteer",
