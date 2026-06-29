@@ -119,11 +119,13 @@ export const HEADS = [
     role: "Web Dev Head",
     dept: "Mechanical Engineering",
     category: "B.Tech",
-    year: null,
+    year: "3rd year",
     rollNo: null,
     email: "me240003006@iiti.ac.in",
     initials: "AV",
-    photo: null,
+    //https://drive.google.com/file/d/1TZvlLQP-lEPzTcOtOm3ou6pu3k4McGzK/view?usp=sharing
+    photo:
+      "https://drive.google.com/thumbnail?id=1TZvlLQP-lEPzTcOtOm3ou6pu3k4McGzK&sz=w400",
     experience: null,
   },
 ];
@@ -138,7 +140,9 @@ export const LEADS = [
     rollNo: null,
     email: null,
     initials: "SB",
-    photo: null,
+    //https://drive.google.com/file/d/1jhxLdyERTnjqNM9o0wGY27MOf9S4jLpn/view?usp=sharing
+    photo:
+      "https://drive.google.com/thumbnail?id=1jhxLdyERTnjqNM9o0wGY27MOf9S4jLpn&sz=w400",
     experience: null,
   },
   {
@@ -163,7 +167,9 @@ export const LEADS = [
     rollNo: null,
     email: null,
     initials: "PK",
-    photo: null,
+    photo:
+      "https://drive.google.com/thumbnail?id=1uM7nq6FdqzPFg8_BGrpw1zaFl4frz6Di&sz=w400",
+    //https://drive.google.com/file/d/1uM7nq6FdqzPFg8_BGrpw1zaFl4frz6Di/view?usp=sharing
     experience: null,
   },
   {
@@ -202,7 +208,9 @@ export const LEADS = [
     rollNo: null,
     email: null,
     initials: "AC",
-    photo: null,
+    photo:
+      "https://drive.google.com/thumbnail?id=1Jjff5U188g-j5zK0WzUBFbneprtSKWTq&sz=w400",
+    //https://drive.google.com/file/d/1Jjff5U188g-j5zK0WzUBFbneprtSKWTq/view?usp=sharing
     experience: null,
   },
 ];
