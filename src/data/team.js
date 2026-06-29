@@ -145,7 +145,7 @@ export const LEADS = [
     name: "Shubh Baid",
     role: "Margdarshan Lead (SHSS)",
     dept: null,
-    category: MSC,
+    category: "MSC",
     year: null,
     rollNo: null,
     email: "msc2503171015@iiti.ac.in",
