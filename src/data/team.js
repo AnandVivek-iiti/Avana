@@ -10,8 +10,6 @@ export const CLUB_HEAD = {
   quote: '"Leading with compassion, serving with purpose."',
   photo:
     "https://drive.google.com/thumbnail?id=1GOXPeoblgIpW7vOpmFM9Qpy5vUMcdUvr&sz=w400",
-  // photo:
-  //   "https://drive.google.com/uc?export=view&id=1GOXPeoblgIpW7vOpmFM9Qpy5vUMcdUvr",
   experience:
     "This is one of my favorite club and will always hold a special place in my heart.",
 };
@@ -79,13 +77,15 @@ export const HEADS = [
   {
     name: "Dipika Bharadiya",
     role: "Content Head",
-    dept: null,
-    category: null,
-    year: null,
+    dept: "Electrical Engineering",
+    category: "B-Tech",
+    year: "1st",
     rollNo: null,
     email: null,
     initials: "DB",
-    photo: null,
+    photo:
+      "https://drive.google.com/thumbnail?id=1-Pif-MmHTVaLcUX7jQ5jT0zgLtZ9bUA2&sz=w400",
+    //https://drive.google.com/file/d/1-Pif-MmHTVaLcUX7jQ5jT0zgLtZ9bUA2/view?usp=sharing,
     experience: null,
   },
   {
@@ -157,9 +157,9 @@ export const LEADS = [
   {
     name: "Parv Khandelwal",
     role: "OPnL Lead",
-    dept: null,
-    category: null,
-    year: null,
+    dept: "Civil Engineering",
+    category: "B-Tech",
+    year: "1st",
     rollNo: null,
     email: null,
     initials: "PK",
