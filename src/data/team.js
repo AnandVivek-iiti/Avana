@@ -8,8 +8,12 @@ export const CLUB_HEAD = {
   email: "avana@iiti.ac.in",
   initials: "MR",
   quote: '"Leading with compassion, serving with purpose."',
-  photo: "https://drive.google.com/thumbnail?id=1JTV3quztYobJpk63s1Ks_0U1KeBzI16j&sz=w400",
-  experience: "This is one of my favorite club and will always hold a special place in my heart.",
+  photo:
+    "https://drive.google.com/thumbnail?id=1GOXPeoblgIpW7vOpmFM9Qpy5vUMcdUvr&sz=w400",
+  // photo:
+  //   "https://drive.google.com/uc?export=view&id=1GOXPeoblgIpW7vOpmFM9Qpy5vUMcdUvr",
+  experience:
+    "This is one of my favorite club and will always hold a special place in my heart.",
 };
 
 export const CO_HEADS = [
@@ -22,10 +26,13 @@ export const CO_HEADS = [
     rollNo: "230002085",
     email: "avana@iiti.ac.in",
     initials: "SD",
-    photo: "https://drive.google.com/thumbnail?id=1_N6_eEnwY7xI7tYKEHovUE7k_mp60jPz&sz=w400",
-    experience: "Every event has given me exposure to different societal realities, made me grow as a person and a leader.",
+    //https://drive.google.com/file/d/1VsyAzWfXufs7WiGR3fOsqEpIzwbaR2op/view?usp=sharing
+    photo:
+      "https://drive.google.com/thumbnail?id=1VsyAzWfXufs7WiGR3fOsqEpIzwbaR2op&sz=w400",
+    experience:
+      "Every event has given me exposure to different societal realities, made me grow as a person and a leader.",
   },
-{
+  {
     name: "Prince Kumar",
     role: "Margdarshan Head",
     dept: "Civil Engineering",
@@ -34,13 +41,14 @@ export const CO_HEADS = [
     rollNo: "240004034",
     email: "mc240041001@iiti.ac.in",
     initials: "PK",
-    photo: "https://drive.google.com/thumbnail?id=17_CylbYeO2H1_Y2CRYdtSMntrTomy8MA&sz=w400",
+    //https://drive.google.com/file/d//view?usp=sharing
+    photo:
+      "https://drive.google.com/thumbnail?id=16Kso3TGFPq-KcZfiXJ7UyfkY6FGytpvW&sz=w400",
     experience: null,
   },
 ];
 
 export const HEADS = [
-
   {
     name: "Sethu Madhav",
     role: "Creatives Head",
@@ -50,8 +58,10 @@ export const HEADS = [
     rollNo: "240008008",
     email: "che240008008@iiti.ac.in",
     initials: "SM",
-    photo: "https://drive.google.com/thumbnail?id=1VNwOvqpn6zIr_i2bek9uwQx5upsqNu6e&sz=w400",
-    experience: "Leading the creative side for the Avana Blood Donation Drive was an incredible experience. Working with such a passionate, funny, and dedicated group of people was truly memorable. In Margdarshan we had so much fun interacting with kids, sharing stories, and making an impact.",
+    photo:
+      "https://drive.google.com/thumbnail?id=1VNwOvqpn6zIr_i2bek9uwQx5upsqNu6e&sz=w400",
+    experience:
+      "Leading the creative side for the Avana Blood Donation Drive was an incredible experience. Working with such a passionate, funny, and dedicated group of people was truly memorable. In Margdarshan we had so much fun interacting with kids, sharing stories, and making an impact.",
   },
   {
     name: "Mandeep Singh",
@@ -62,7 +72,8 @@ export const HEADS = [
     rollNo: "250002037",
     email: "ee250002037@iiti.ac.in",
     initials: "MS",
-    photo: "https://drive.google.com/thumbnail?id=15MoNFPd3fDlE82zIBkF5IKenYpdsDFqs&sz=w400",
+    photo:
+      "https://drive.google.com/thumbnail?id=15MoNFPd3fDlE82zIBkF5IKenYpdsDFqs&sz=w400",
     experience: null,
   },
   {
@@ -86,7 +97,8 @@ export const HEADS = [
     rollNo: "250002036",
     email: "ee250002036@iiti.ac.in",
     initials: "MM",
-    photo: "https://drive.google.com/thumbnail?id=1RwXBTrnbY7iBAanxYqmNXkHarNXv6b3T&sz=w400",
+    photo:
+      "https://drive.google.com/thumbnail?id=1RwXBTrnbY7iBAanxYqmNXkHarNXv6b3T&sz=w400",
     experience: null,
   },
   {
@@ -98,7 +110,8 @@ export const HEADS = [
     rollNo: "240041001",
     email: "mc240041001@iiti.ac.in",
     initials: "AS",
-    photo: "https://drive.google.com/thumbnail?id=17_CylbYeO2H1_Y2CRYdtSMntrTomy8MA&sz=w400",
+    photo:
+      "https://drive.google.com/thumbnail?id=17_CylbYeO2H1_Y2CRYdtSMntrTomy8MA&sz=w400",
     experience: null,
   },
   {
@@ -137,7 +150,8 @@ export const LEADS = [
     rollNo: "250041014",
     email: "mc250041014@iiti.ac.in",
     initials: "DC",
-    photo: "https://drive.google.com/thumbnail?id=1WKLsg3kNNRYuGNLiOPMu0w-hCsJ1Z62s&sz=w400",
+    photo:
+      "https://drive.google.com/thumbnail?id=1WKLsg3kNNRYuGNLiOPMu0w-hCsJ1Z62s&sz=w400",
     experience: null,
   },
   {
@@ -161,7 +175,8 @@ export const LEADS = [
     rollNo: "240001080",
     email: "cse240001080@iiti.ac.in",
     initials: "VK",
-    photo: "https://drive.google.com/thumbnail?id=1QJdc0RDzqo4_LC1nAoPKveKbebLvdzla&sz=w400",
+    photo:
+      "https://drive.google.com/thumbnail?id=1QJdc0RDzqo4_LC1nAoPKveKbebLvdzla&sz=w400",
     experience: null,
   },
   {
@@ -173,8 +188,10 @@ export const LEADS = [
     rollNo: "250004001",
     email: "ce250004001@iiti.ac.in",
     initials: "AK",
-    photo: "https://drive.google.com/thumbnail?id=1IfaeWifgO9S151TQqEHc_WvTRbzOGgMF&sz=w400",
-    experience: "It was an amazing experience to be a part of Avana club this year.",
+    photo:
+      "https://drive.google.com/thumbnail?id=1IfaeWifgO9S151TQqEHc_WvTRbzOGgMF&sz=w400",
+    experience:
+      "It was an amazing experience to be a part of Avana club this year.",
   },
   {
     name: "Aman Chauhan",
@@ -191,20 +208,22 @@ export const LEADS = [
 ];
 
 export const MEMBERS = [
-   {
-  name: "Anurag Singh",
-  role: "Ex Club Head",
-  dept: "MEMS",
-  category: "M.Tech",
-  year: "2nd",
-  rollNo: "2402105027",
-  email: "avana@iiti.ac.in",
-  initials: "AS",
-  quote: '"Leading with compassion, serving with purpose."',
-  photo: "https://drive.google.com/thumbnail?id=1JTV3quztYobJpk63s1Ks_0U1KeBzI16j&sz=w400",
-  experience: "This is one of my favorite club and will always hold a special place in my heart.",
-},
-   {
+  {
+    name: "Anurag Singh",
+    role: "Ex Club Head",
+    dept: "MEMS",
+    category: "M.Tech",
+    year: "2nd",
+    rollNo: "2402105027",
+    email: "avana@iiti.ac.in",
+    initials: "AS",
+    quote: '"Leading with compassion, serving with purpose."',
+    photo:
+      "https://drive.google.com/thumbnail?id=1JTV3quztYobJpk63s1Ks_0U1KeBzI16j&sz=w400",
+    experience:
+      "This is one of my favorite club and will always hold a special place in my heart.",
+  },
+  {
     name: "Yalavarthi Udayasri",
     role: "Ex CO head",
     dept: "Electrical Engineering",
@@ -213,8 +232,10 @@ export const MEMBERS = [
     rollNo: "230002085",
     email: "ee230002085@iiti.ac.in",
     initials: "YU",
-    photo: "https://drive.google.com/thumbnail?id=1_N6_eEnwY7xI7tYKEHovUE7k_mp60jPz&sz=w400",
-    experience: "Every event has given me exposure to different societal realities, made me grow as a person and a leader.",
+    photo:
+      "https://drive.google.com/thumbnail?id=1_N6_eEnwY7xI7tYKEHovUE7k_mp60jPz&sz=w400",
+    experience:
+      "Every event has given me exposure to different societal realities, made me grow as a person and a leader.",
   },
   {
     name: "Yug Prabhat",
@@ -225,8 +246,10 @@ export const MEMBERS = [
     rollNo: "240004053",
     email: "ce240004053@iiti.ac.in",
     initials: "YP",
-    photo: "https://drive.google.com/thumbnail?id=137ZUfhSopa2E6v_E2JdLPCqsE-MMCAgI&sz=w400",
-    experience: "Being a part of the club for the past two years has been a wonderful experience of growth, friendship, and purpose.",
+    photo:
+      "https://drive.google.com/thumbnail?id=137ZUfhSopa2E6v_E2JdLPCqsE-MMCAgI&sz=w400",
+    experience:
+      "Being a part of the club for the past two years has been a wonderful experience of growth, friendship, and purpose.",
   },
   {
     name: "Anirban Roy",
@@ -237,10 +260,11 @@ export const MEMBERS = [
     rollNo: "2502104012",
     email: "mt2502104012@iiti.ac.in",
     initials: "AR",
-    photo: "https://drive.google.com/thumbnail?id=1bchX6QAFS6pWPQxYc8feQLR9qP3AHk2-&sz=w400",
+    photo:
+      "https://drive.google.com/thumbnail?id=1bchX6QAFS6pWPQxYc8feQLR9qP3AHk2-&sz=w400",
     experience: "The best group in IIT Indore.",
   },
-   {
+  {
     name: "Smita Singh",
     role: "Volunteer",
     dept: "Chemical Engineering",
@@ -249,10 +273,11 @@ export const MEMBERS = [
     rollNo: "250008035",
     email: "che250008035@iiti.ac.in",
     initials: "SS",
-    photo: "https://drive.google.com/thumbnail?id=1KVSCYdQ4p2J5xAPyeqyqTTw7zym5r51a&sz=w400",
+    photo:
+      "https://drive.google.com/thumbnail?id=1KVSCYdQ4p2J5xAPyeqyqTTw7zym5r51a&sz=w400",
     experience: null,
   },
-   {
+  {
     name: "Sahil Bharti",
     role: "Volunteer",
     dept: "Mechanical Engineering",
@@ -261,8 +286,10 @@ export const MEMBERS = [
     rollNo: "220003069",
     email: "me220003069@iiti.ac.in",
     initials: "SB",
-    photo: "https://drive.google.com/thumbnail?id=1KzjNIirCIeSN2Wyicq4Q3FDMFPmeIzoS&sz=w400",
-    experience: "A family which works for all. If you are part of the Avana community, you will always find people who care.",
+    photo:
+      "https://drive.google.com/thumbnail?id=1KzjNIirCIeSN2Wyicq4Q3FDMFPmeIzoS&sz=w400",
+    experience:
+      "A family which works for all. If you are part of the Avana community, you will always find people who care.",
   },
   {
     name: "Ayushi Rawat",
@@ -273,8 +300,10 @@ export const MEMBERS = [
     rollNo: "2502171032",
     email: "mt2502171032@iiti.ac.in",
     initials: "AR",
-    photo: "https://drive.google.com/thumbnail?id=1iUjzBEhK2aILpz0DZU4UyS8FCCji9eRV&sz=w400",
-    experience: "Avana was more than a student club to me. It was a reminder that universities are not just about grades — they are about humanity.",
+    photo:
+      "https://drive.google.com/thumbnail?id=1iUjzBEhK2aILpz0DZU4UyS8FCCji9eRV&sz=w400",
+    experience:
+      "Avana was more than a student club to me. It was a reminder that universities are not just about grades — they are about humanity.",
   },
   {
     name: "Saurav Kumar Raushan",
@@ -285,8 +314,10 @@ export const MEMBERS = [
     rollNo: "2402106007",
     email: "mt2402106007@iiti.ac.in",
     initials: "SK",
-    photo: "https://drive.google.com/thumbnail?id=1nf1FfKk-RSGMdh9YeQ7jv-a92_kJnhcq&sz=w400",
-    experience: "As a member of Avana, I actively participated in community outreach. I visited orphanages and old-age homes, celebrating Diwali with students from underprivileged backgrounds. My journey with Avana was not only an opportunity to serve society but also to grow as a human being.",
+    photo:
+      "https://drive.google.com/thumbnail?id=1nf1FfKk-RSGMdh9YeQ7jv-a92_kJnhcq&sz=w400",
+    experience:
+      "As a member of Avana, I actively participated in community outreach. I visited orphanages and old-age homes, celebrating Diwali with students from underprivileged backgrounds. My journey with Avana was not only an opportunity to serve society but also to grow as a human being.",
   },
   {
     name: "Dipika Gautam",
@@ -297,7 +328,8 @@ export const MEMBERS = [
     rollNo: "2502171035",
     email: "mt2502171035@iiti.ac.in",
     initials: "DG",
-    photo: "https://drive.google.com/thumbnail?id=15TOHz5f4skGuTTOs3va4WCYfxg_Uf9n1cT&sz=w400",
+    photo:
+      "https://drive.google.com/thumbnail?id=15TOHz5f4skGuTTOs3va4WCYfxg_Uf9n1cT&sz=w400",
     experience: null,
   },
   {
@@ -309,7 +341,8 @@ export const MEMBERS = [
     rollNo: "240004021",
     email: "ce240004021@iiti.ac.in",
     initials: "JV",
-    photo: "https://drive.google.com/thumbnail?id=1TT8s_k7TzimTo4y79nMQ9F-GoEsFwRYw&sz=w400",
+    photo:
+      "https://drive.google.com/thumbnail?id=1TT8s_k7TzimTo4y79nMQ9F-GoEsFwRYw&sz=w400",
     experience: null,
   },
   {
@@ -321,8 +354,10 @@ export const MEMBERS = [
     rollNo: "240008012",
     email: "che240008012@iiti.ac.in",
     initials: "GM",
-    photo: "https://drive.google.com/thumbnail?id=1rAT2pXCOWlZ5EKP1lW4ZEw7EJaIsK7UB&sz=w400",
-    experience: "Being a part of Avana has been a truly memorable experience. From visiting orphanages and interacting with kids to having fun while preparing for events — Avana gave me the opportunity to contribute to society, build great friendships, and create lasting memories.",
+    photo:
+      "https://drive.google.com/thumbnail?id=1rAT2pXCOWlZ5EKP1lW4ZEw7EJaIsK7UB&sz=w400",
+    experience:
+      "Being a part of Avana has been a truly memorable experience. From visiting orphanages and interacting with kids to having fun while preparing for events — Avana gave me the opportunity to contribute to society, build great friendships, and create lasting memories.",
   },
   {
     name: "Shashivardhan",
@@ -333,7 +368,8 @@ export const MEMBERS = [
     rollNo: "240008003",
     email: "che240008003@iiti.ac.in",
     initials: "SH",
-    photo: "https://drive.google.com/thumbnail?id=1DQxNYO4lJHfymIs6lLJsd5jAtveyZOQ0&sz=w400",
+    photo:
+      "https://drive.google.com/thumbnail?id=1DQxNYO4lJHfymIs6lLJsd5jAtveyZOQ0&sz=w400",
     experience: null,
   },
   {
@@ -345,7 +381,8 @@ export const MEMBERS = [
     rollNo: "2401205006",
     email: "phd2401205006@iiti.ac.in",
     initials: "GT",
-    photo: "https://drive.google.com/thumbnail?id=1XwwXyC-mMHoAhiQdmBFYT9Xk66Cfq50P&sz=w400",
+    photo:
+      "https://drive.google.com/thumbnail?id=1XwwXyC-mMHoAhiQdmBFYT9Xk66Cfq50P&sz=w400",
     experience: null,
   },
   {
@@ -357,8 +394,10 @@ export const MEMBERS = [
     rollNo: "250005006",
     email: "mems250005006@iiti.ac.in",
     initials: "AK",
-    photo: "https://drive.google.com/thumbnail?id=1WDCDQiQe8seH3kylTNnBp8MAkI2b-_7P&sz=w400",
-    experience: "Lots of ups and downs, but seniors made my way through everything. I love being part of Avana.",
+    photo:
+      "https://drive.google.com/thumbnail?id=1WDCDQiQe8seH3kylTNnBp8MAkI2b-_7P&sz=w400",
+    experience:
+      "Lots of ups and downs, but seniors made my way through everything. I love being part of Avana.",
   },
   {
     name: "Aishwarya Agrawal",
@@ -369,7 +408,8 @@ export const MEMBERS = [
     rollNo: "230008005",
     email: "che230008005@iiti.ac.in",
     initials: "AA",
-    photo: "https://drive.google.com/thumbnail?id=1pJUAwaXxowSXb80QGKzr8KY5WXIloZ-B&sz=w400",
+    photo:
+      "https://drive.google.com/thumbnail?id=1pJUAwaXxowSXb80QGKzr8KY5WXIloZ-B&sz=w400",
     experience: null,
   },
   {
@@ -381,7 +421,8 @@ export const MEMBERS = [
     rollNo: "250008001",
     email: "che250008001@iiti.ac.in",
     initials: "AS",
-    photo: "https://drive.google.com/thumbnail?id=1di6wFrwJBLBn0vTfBaP8j8KYYat4sTqP&sz=w400",
+    photo:
+      "https://drive.google.com/thumbnail?id=1di6wFrwJBLBn0vTfBaP8j8KYYat4sTqP&sz=w400",
     experience: null,
   },
   {
@@ -393,7 +434,8 @@ export const MEMBERS = [
     rollNo: "240004035",
     email: "ce240004035@iiti.ac.in",
     initials: "MP",
-    photo: "https://drive.google.com/thumbnail?id=1kVlaGjN0Ygtu32DfBXfqQWdA1k4bcKmV&sz=w400",
+    photo:
+      "https://drive.google.com/thumbnail?id=1kVlaGjN0Ygtu32DfBXfqQWdA1k4bcKmV&sz=w400",
     experience: null,
   },
   {
@@ -405,8 +447,10 @@ export const MEMBERS = [
     rollNo: "250002047",
     email: "ee250002047@iiti.ac.in",
     initials: "AP",
-    photo: "https://drive.google.com/thumbnail?id=1GG-xtSdCOvB3n8kj0HHdjVWQZooutv0u&sz=w400",
-    experience: "I'm so grateful to be a part of this club. Every Avana event I've participated in has left me with new perspectives and beautiful memories.",
+    photo:
+      "https://drive.google.com/thumbnail?id=1GG-xtSdCOvB3n8kj0HHdjVWQZooutv0u&sz=w400",
+    experience:
+      "I'm so grateful to be a part of this club. Every Avana event I've participated in has left me with new perspectives and beautiful memories.",
   },
   {
     name: "Aman Verma",
@@ -417,7 +461,8 @@ export const MEMBERS = [
     rollNo: "250051003",
     email: "ep250051003@iiti.ac.in",
     initials: "AV",
-    photo: "https://drive.google.com/thumbnail?id=1-KJVtLoCr6VHJHFfwY-6m5yfqy9f5zhH&sz=w400",
+    photo:
+      "https://drive.google.com/thumbnail?id=1-KJVtLoCr6VHJHFfwY-6m5yfqy9f5zhH&sz=w400",
     experience: null,
   },
   {
@@ -429,8 +474,8 @@ export const MEMBERS = [
     rollNo: "230041028",
     email: "mc230041028@iiti.ac.in",
     initials: "RK",
-    photo: "https://drive.google.com/thumbnail?id=1ZA3ErU8jMeoZx1wLYx9WmkNeVX2Qzffi&sz=w400",
+    photo:
+      "https://drive.google.com/thumbnail?id=1ZA3ErU8jMeoZx1wLYx9WmkNeVX2Qzffi&sz=w400",
     experience: null,
   },
-
 ];
