@@ -104,6 +104,7 @@ export const HEADS = [
     rollNo: "250002036",
     email: "ee250002036@iiti.ac.in",
     initials: "MM",
+    linkedin: "https://www.linkedin.com/in/madhur-mittal185 ",
     photo:
       "https://drive.google.com/thumbnail?id=1RwXBTrnbY7iBAanxYqmNXkHarNXv6b3T&sz=w400",
     experience: null,
@@ -164,6 +165,7 @@ export const LEADS = [
     rollNo: "250041014",
     email: "mc250041014@iiti.ac.in",
     initials: "DC",
+    linkedin: "https://www.linkedin.com/in/deepali-chauhan-78b314411/",
     photo:
       "https://drive.google.com/thumbnail?id=1WKLsg3kNNRYuGNLiOPMu0w-hCsJ1Z62s&sz=w400",
     experience: null,
@@ -408,7 +410,7 @@ export const MEMBERS = [
       "https://drive.google.com/thumbnail?id=1XwwXyC-mMHoAhiQdmBFYT9Xk66Cfq50P&sz=w400",
     experience: null,
   },
-  
+
   // {
   //   name: "Aman Chauhan",
   //   role: "Volunteer",
@@ -424,7 +426,7 @@ export const MEMBERS = [
   //   experience:
   //     "Lots of ups and downs, but seniors made my way through everything. I love being part of Avana.",
   // },
-  
+
   {
     name: "Aishwarya Agrawal",
     role: "Volunteer",
